@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rami Hamati | Neuropsychopharmacology Researcher</title>
+    <style>
+        /* --- Modern Academic Theme --- */
+        :root {
+            --primary-color: #2c3e50; /* Dark Slate Blue */
+            --accent-color: #80A4ED; /* Bright Blue */
+            --bg-color: #f8f9fa;      /* Light Grey Background */
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            background-color: var(--bg-color);
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        h1, h2, h3 { color: var(--primary-color); }
+        h1 { font-size: 2.2rem; margin-bottom: 0.5rem; margin-top: 0; }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 15px; margin-top: 0; }
+        
+        .lead {
+            font-size: 1.15rem;
+            color: #555;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        /* 3 Pillars Grid */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .pillar-card {
+            background: #fff;
+            padding: 0 10px;
+        }
+
+        .pillar-card h3 {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        /* Publication List */
+        .pub-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .pub-item:last-child { border-bottom: none; }
+
+        .pub-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .pub-authors { font-size: 0.95rem; color: #444; margin-bottom: 4px; }
+        .pub-meta { font-size: 0.9rem; color: #7f8c8d; font-style: italic; }
+
+        /* Contact & Education */
+        .contact-links { margin-top: 20px; }
+        .contact-links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .edu-details { font-weight: 700; color: #2c3e50; }
+        .edu-sub { display: block; font-weight: 400; color: #555; font-size: 0.95rem; margin-top: 2px;}
+        .edu-date { color: #888; font-size: 0.95rem; text-align: right; min-width: 120px; }
+
+        @media (max-width: 600px) {
+            .edu-item { flex-direction: column; }
+            .edu-date { text-align: left; margin-top: 5px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Rami Hamati, Ph.D.</a>
+            <div class="nav-links">
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <section id="research">
+            <h1>Rami Hamati</h1>
+            <p class="lead">
+                Incoming Postdoctoral Fellow at Western University | Translational Neuroscience & Neuropsychopharmacology
+            </p>
+            <p>
+                My research program integrates behavioral models, electrophysiology, and neuroimaging to bridge the gap between basic biological mechanisms and clinical psychiatric presentation.
+            </p>
+
+            <div class="pillars">
+                <div class="pillar-card">
+                    <h3>🔄 Reverse Translation</h3>
+                    <p><strong>From Bedside to Bench:</strong> Modeling clinical findings in animals to dissect underlying circuitry.</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>➡️ Forward Translation</h3>
+                    <p><strong>From Bench to Bedside:</strong> Translating basic research findings into clinical correlates using multimodal imaging (PET, Neuromelanin-Sensitive MRI, functional MRI).</p>
+                </div>
+                <div class="pillar-card">
+                    <h3>💊 Pharmacological Mechanisms</h3>
+                    <p><strong>Mechanism of Action:</strong> Elucidating the precise neural targets of psychoactive compounds. This includes characterizing the effects of therapeutic agents (e.g., novel antipsychotics) and non-therapeutic substances (e.g., cannabis) on monoaminergic systems.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+            
+            <div class="pub-item">
+                <div class="pub-title">Cholinergic system in schizophrenia: A systematic review and meta-analysis</div>
+                <div class="pub-authors">Saint-Georges, Z., ... <strong>Hamati, R.</strong>, et al.</div>
+                <div class="pub-meta">Molecular Psychiatry (2025)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">65 years of research on dopamine’s role in classical fear conditioning and extinction: A systematic review</div>
+                <div class="pub-authors"><strong>Hamati, R.</strong>, Ahrens, J., Shvetz, C., Holahan, M.R., & Tuominen, L.</div>
+                <div class="pub-meta">European Journal of Neuroscience (2024)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Evidence for Locus Coeruleus–Norepinephrine System Abnormality in Military Posttraumatic Stress Disorder Revealed by Neuromelanin-Sensitive MRI</div>
+                <div class="pub-authors">McCall, A., ... <strong>Hamati, R.</strong>, ... et al.</div>
+                <div class="pub-meta">Biological Psychiatry (2024)</div>
+            </div>
+
+            <div class="pub-item">
+                <div class="pub-title">Serotonin-2B receptor antagonism increases the activity of dopamine and glutamate neurons in the presence of selective serotonin reuptake inhibition</div>
+                <div class="pub-authors"><strong>Hamati, R.</strong>, El Mansari, M., & Blier, P.</div>
+                <div class="pub-meta">Neuropsychopharmacology (2020)</div>
+            </div>
+
+            <p style="margin-top:30px;">
+                <em>For a complete list of work, please visit my <a href="https://scholar.google.com/citations?user=uu8qPQQAAAAJ&hl=en" target="_blank">Google Scholar Profile</a>.</em>
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-links">
+                <a href="mailto:rami.hamati@uwo.ca">📧 Email</a>
+                <a href="https://github.com/rami-hamati" target="_blank">🐙 GitHub</a>
+                <a href="https://scholar.google.com/citations?user=uu8qPQQAAAAJ&hl=en" target="_blank">🎓 Google Scholar</a>
+                <a href="https://www.linkedin.com/in/rami-hamati" target="_blank">💼 LinkedIn</a>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education & Experience</h2>
+
+            <div class="edu-item">
+                <div class="edu-details">
+                    Postdoctoral Fellow
+                    <span class="edu-sub">Western University</span>
+                    <span class="edu-sub">Advisors: Drs. Jibran Khokhar & Lena Palaniyappan</span>
+                </div>
+                <div class="edu-date">Jan 2026 - Present</div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-details">
+                    Ph.D. in Neuroscience
+                    <span class="edu-sub">University of Ottawa (IMHR)</span>
+                    <span class="edu-sub">Advisors: Dr. Lauri Tuominen and Clifford Cassidy</span>
+                </div>
+                <div class="edu-date">2020 - 2025</div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-details">
+                    M.Sc. in Neuroscience
+                    <span class="edu-sub">University of Ottawa</span>
+                    <span class="edu-sub">Advisors: Drs. Pierre Blier and Mostafa El Mansari</span>
+                </div>
+                <div class="edu-date">2018 - 2020</div>
+            </div>
+        </section>
+
+    </div>
+    
+    <footer style="text-align: center; padding: 20px; color: #999; font-size: 0.85rem;">
+        &copy; 2025 Rami Hamati.
+    </footer>
+
+</body>
+</html>
