@@ -7,8 +7,9 @@
     <style>
         /* --- Modern Academic Theme --- */
         :root {
+            /* Changed accent to a slightly darker blue for better visibility */
             --primary-color: #2c3e50; /* Dark Slate Blue */
-            --accent-color: #80A4ED; /* Bright Blue */
+            --accent-color: #4A90E2;  /* Vivid Blue (High Contrast) */
             --bg-color: #f8f9fa;      /* Light Grey Background */
             --text-color: #333;
         }
@@ -53,6 +54,7 @@
             color: #555;
             font-weight: 500;
             font-size: 0.95rem;
+            transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
@@ -61,7 +63,7 @@
 
         /* Main Container */
         .container {
-            max-width: 900px;
+            max-width: 800px; /* Slightly narrower for better reading */
             margin: 0 auto;
             padding: 40px 20px;
         }
@@ -85,23 +87,34 @@
             margin-bottom: 30px;
         }
 
-        /* 3 Pillars Grid */
+        /* --- UPDATED: Pillars Section (Centered & Stacked) --- */
         .pillars {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
+            display: flex;
+            flex-direction: column; /* Stacks them vertically */
+            align-items: center;    /* Centers them horizontally */
+            gap: 30px;              /* Space between cards */
             margin-top: 40px;
         }
 
         .pillar-card {
             background: #fff;
-            padding: 0 10px;
+            padding: 30px;
+            border: 1px solid #e0e0e0; /* Subtle border definition */
+            border-left: 5px solid var(--accent-color); /* Nice blue accent bar on left */
+            border-radius: 6px;
+            text-align: center;     /* Centers the text inside */
+            max-width: 600px;       /* Prevents them from stretching too wide */
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
 
         .pillar-card h3 {
-            font-size: 1.1rem;
-            color: var(--accent-color);
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 0;
             margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         /* Publication List */
@@ -140,7 +153,7 @@
         }
         .edu-details { font-weight: 700; color: #2c3e50; }
         .edu-sub { display: block; font-weight: 400; color: #555; font-size: 0.95rem; margin-top: 2px;}
-        .edu-date { color: #888; font-size: 0.95rem; text-align: right; min-width: 120px; }
+        .edu-date { color: #888; font-size: 0.95rem; text-align: right; min-width: 140px; }
 
         @media (max-width: 600px) {
             .edu-item { flex-direction: column; }
@@ -164,25 +177,27 @@
     <div class="container">
         
         <section id="research">
-            <h1>Rami Hamati</h1>
-            <p class="lead">
-                Incoming Postdoctoral Fellow at Western University | Translational Neuroscience & Neuropsychopharmacology
-            </p>
-            <p>
-                My research program integrates behavioral models, electrophysiology, and neuroimaging to bridge the gap between basic biological mechanisms and clinical psychiatric presentation.
-            </p>
+            <div style="text-align: center;">
+                <h1>Rami Hamati</h1>
+                <p class="lead">
+                    Incoming Postdoctoral Fellow at Western University | Translational Neuroscience & Neuropsychopharmacology
+                </p>
+                <p style="max-width: 700px; margin: 0 auto 40px auto;">
+                    My research program integrates behavioral models, electrophysiology, and neuroimaging to bridge the gap between basic biological mechanisms and clinical psychiatric presentation.
+                </p>
+            </div>
 
             <div class="pillars">
                 <div class="pillar-card">
-                    <h3>🔄 Reverse Translation</h3>
+                    <h3>I. Reverse Translation</h3>
                     <p><strong>From Bedside to Bench:</strong> Modeling clinical findings in animals to dissect underlying circuitry.</p>
                 </div>
                 <div class="pillar-card">
-                    <h3>➡️ Forward Translation</h3>
+                    <h3>II. Forward Translation</h3>
                     <p><strong>From Bench to Bedside:</strong> Translating basic research findings into clinical correlates using multimodal imaging (PET, Neuromelanin-Sensitive MRI, functional MRI).</p>
                 </div>
                 <div class="pillar-card">
-                    <h3>💊 Pharmacological Mechanisms</h3>
+                    <h3>III. Pharmacological Mechanisms</h3>
                     <p><strong>Mechanism of Action:</strong> Elucidating the precise neural targets of psychoactive compounds. This includes characterizing the effects of therapeutic agents (e.g., novel antipsychotics) and non-therapeutic substances (e.g., cannabis) on monoaminergic systems.</p>
                 </div>
             </div>
@@ -266,6 +281,9 @@
     <footer style="text-align: center; padding: 20px; color: #999; font-size: 0.85rem;">
         &copy; 2025 Rami Hamati.
     </footer>
+
+</body>
+</html>
 
 </body>
 </html>
